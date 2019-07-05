@@ -33,7 +33,7 @@ var main = function () {
     let puerto= process.env.PORT||3000
 
 
-    app.listen(PORT, function () {
+    app.listen(puerto, function () {
         console.log(`Server running in port ${puerto}`);
     });
 };
