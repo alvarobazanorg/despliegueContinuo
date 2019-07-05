@@ -29,8 +29,12 @@ var main = function () {
         });
     });
     // Iniciamos la ejecucion del server
+    //ya no funciona local con {proces.env.PORT} ahora funciona tmb localmente
+    let puerto= process.env.PORT||3000
+
+
     app.listen(PORT, function () {
-        console.log("Server running in port " + PORT);
+        console.log(`Server running in port ${puerto}`);
     });
 };
 main();
