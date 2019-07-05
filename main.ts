@@ -31,8 +31,9 @@ let main = () =>
     })
 
     // Iniciamos la ejecucion del server
-    app.listen(PORT, ()=>{
-        console.log(`Server running in port ${PORT}`);
+    let puerto= process.env.PORT||3000
+    app.listen(puerto, ()=>{
+        console.log(`Server running in port ${puerto}`);
     })
 }
 
