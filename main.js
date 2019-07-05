@@ -6,7 +6,7 @@ var Calculadora = /** @class */ (function () {
     function Calculadora() {
     }
     Calculadora.prototype.sumar = function (op1, op2) {
-        return op1 + op2;
+        return op1 - op2;
     };
     return Calculadora;
 }());
